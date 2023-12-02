@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador de Personagens RPG</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Personagens RPG</h1>
+        <form id="characterForm">
+            <label for="raca">Escolha uma raça:</label>
+            <select id="raca" required>
+                <option value="humano">Humano</option>
+                <option value="elfo">Elfo</option>
+                <option value="anao">Anão</option>
+            </select>
+
+            <label for="classe">Escolha uma classe:</label>
+            <select id="classe" required>
+                <option value="guerreiro">Guerreiro</option>
+                <option value="mago">Mago</option>
+                <option value="ladino">Ladino</option>
+            </select>
+
+            <label for="genero">Escolha um gênero:</label>
+            <select id="genero" required>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select>
+
+            <button type="button" id="botaoGerar">Gerar Personagem</button>
+        </form>
+
+        <div id="fichaPersonagem" class="escondido">
+            <h2>Ficha do Personagem</h2>
+            <p id="nomePersonagem"></p>
+            <ul id="atributos"></ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
